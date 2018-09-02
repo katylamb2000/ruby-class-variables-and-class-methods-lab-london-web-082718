@@ -29,9 +29,15 @@ def self.genres
 end
 
 # def self.genre_count
-  
-# return @@genres.group_by{ |v| v }.flat_map{ |k, v| [k => v.size] }
-# end
+    genre_count = {}
+    @@genres.each do |genre|
+      if genre_count[genre] 
+        genre_count[genre] += 1
+      else
+        genre_count[genre] = 1
+      end
+      genre_count
+    end
 
 def self.artist_count
     artist_count = {}
