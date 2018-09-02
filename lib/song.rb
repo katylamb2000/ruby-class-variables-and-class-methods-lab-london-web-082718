@@ -31,13 +31,10 @@ end
 def self.genre_count
   # genre_count = @@genres.group_by { |genre| genre.collect { |key, genre| [key => genre.size] }}
  return @@genres.group_by{ |v| v }.flat_map{ |k, v| [k => v.size] }
-
-
-# values.group_by { |v| ranges.find { |r| r.cover? v } }
-end
 end
 
 def self.artist_count
   artist_count = @@artist.group_{ |artist| artist}.map { |key, artist| [key => artist.size]}
+end
 end
 
