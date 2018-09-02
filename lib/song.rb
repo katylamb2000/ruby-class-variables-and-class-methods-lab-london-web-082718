@@ -38,6 +38,6 @@ end
 end
 
 def self.artist_count
-  artist_count = @@artist.group_{ |artist| artist}.map { |key, artist| [ke => artist.size]}
+  artist_count = @@artist.group_{ |artist| artist}.map { |key, artist| [key => artist.size]}
 end
 
