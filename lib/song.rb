@@ -36,6 +36,7 @@ end
       else
         genre_count[genre] = 1
       end
+    end
       genre_count
     end
 
@@ -51,8 +52,5 @@ def self.artist_count
     artist_count
   end
 
-# def self.artist_count
-#   return @@artists.group_by { |artist| artist}.map { |key, artist| [key => artist.size]}.flatten
-# end
 end
 
